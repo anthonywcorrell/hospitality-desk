@@ -1,0 +1,6 @@
+.env*
+.dev.vars
+roster.local.*
+_private/
+node_modules/
+.DS_Store

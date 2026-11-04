@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git mv:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git push origin main)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Read(./**/.env*)",
+      "Read(./roster.local.*)",
+      "Read(./**/roster.local.*)",
+      "Read(./**/.dev.vars)",
+      "Read(./_private/**)",
+      "Read(./**/_private/**)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(wrangler:*)",
+      "Bash(npx wrangler:*)",
+      "Bash(vercel:*)"
+    ]
+  }
+}
